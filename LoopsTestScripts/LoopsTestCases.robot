@@ -39,3 +39,14 @@ Pass Execution if practice example
         ${a}=          Set Variable    10
         Pass Execution If              ${a}<3   Test case pass value is greater than 5
         Fail                        Because a value is not greater than 3
+
+Return From Keyword if practice example
+    [Tags]        ReturnFromKeyif
+    [Documentation]    Return the value based on the given condition
+        ${b}=          returnmessage
+
+*** Keywords ***
+returnmessage
+    ${a}=    Set Variable    10
+    Return From Keyword If    ${a}>=10    Hello condition satify
+    Return From Keyword If    ${a}<10     Oooo! 
