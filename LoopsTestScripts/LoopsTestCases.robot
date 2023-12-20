@@ -21,5 +21,5 @@ For Loop Continue if practice example
         FOR        ${i}        IN RANGE    1    11
             Log        Start - ${i}            
             Continue For Loop If           ${i}>5     
-            Log        End - {i}       
+            Log        End - ${i}       
         END 
