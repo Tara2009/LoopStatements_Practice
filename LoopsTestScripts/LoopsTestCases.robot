@@ -23,3 +23,12 @@ For Loop Continue if practice example
             Continue For Loop If           ${i}>5     
             Log        End - ${i}       
         END 
+
+Exit For Loop if practice example
+    [Tags]    ExitForLoopIF
+    [Documentation]    Exit For Loop if statement. once pass the exit for loop if condition. terminate the condition
+        FOR    ${i}    IN RANGE    1    10
+            Log     Start - ${i}
+           Exit For Loop If    $[i]>3
+           Log     End - ${i} 
+        END
