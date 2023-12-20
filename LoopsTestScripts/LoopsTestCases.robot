@@ -37,5 +37,5 @@ Pass Execution if practice example
     [Tags]    PassExecutionif
     [Documentation]    If the given condition is pass, test case mark as "Pass" otherwise "Fail"
         ${a}=          Set Variable    10
-        Pass Execution If              ${a}>5   Test case pass value is greater than 5
+        Pass Execution If              ${a}>3   Test case pass value is greater than 5
         Fail                        Because a value is not greater than 5
