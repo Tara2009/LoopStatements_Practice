@@ -32,3 +32,10 @@ Exit For Loop if practice example
            Exit For Loop If    ${i}>3
            Log     End - ${i} 
         END
+
+Pass Execution if practice example
+    [Tags]    PassExecutionif
+    [Documentation]    If the given condition is pass, test case mark as "Pass" otherwise "Fail"
+        ${a}=          Set Variable    10
+        Pass Execution If              ${a}>5   Test case pass value is greater than 5
+        Fail                        Because a value is not greater than 5
