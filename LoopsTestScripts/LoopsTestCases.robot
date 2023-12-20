@@ -14,3 +14,12 @@ ForLoop Practice example
             Log               ${i}
             Run Keyword Unless                            ${i}>5              Log    ---------
         END
+
+For Loop Continue if practice example
+    [Tags]    ForLoopscontinueif
+    [Documentation]    Continue for loopif contion practice example
+        FOR        ${i}        IN RANGE    1    11
+            Log        Start - ${i}            
+            Continue For Loop If           ${i}>5     
+            Log        End - {i}       
+        END 
