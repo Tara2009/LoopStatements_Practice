@@ -29,6 +29,6 @@ Exit For Loop if practice example
     [Documentation]    Exit For Loop if statement. once pass the exit for loop if condition. terminate the condition
         FOR    ${i}    IN RANGE    1    10
             Log     Start - ${i}
-           Exit For Loop If    $[i]>3
+           Exit For Loop If    ${i}>3
            Log     End - ${i} 
         END
