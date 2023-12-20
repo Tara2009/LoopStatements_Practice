@@ -10,7 +10,7 @@ Suite Teardown            End suite
 ForLoop Practice example
     [Tags]                ForLoopStatement
     [Documentation]       For Loop Statement practice example
-        FOR       ${i}    IN     RANGE 1      11
-            Log       ${i}
-        Run Keyword Unless     ${i}>5              Log    ---------
+    FOR                   ${i}                        IN     RANGE 1      11
+        Log               ${i}
+        Run Keyword Unless                            ${i}>5              Log    ---------
     END
